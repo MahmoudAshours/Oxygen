@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:oxygen/widgets/gradient_arclight.dart';
 
 class HomeWidget extends StatefulWidget {
   @override
@@ -6,6 +8,7 @@ class HomeWidget extends StatefulWidget {
 }
 
 class _HomeWidgetState extends State<HomeWidget> {
+  int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +25,18 @@ class _HomeWidgetState extends State<HomeWidget> {
                 ],
               ),
             ),
+          ),
+          GradientArcLight(
+            currentIndex: _selectedIndex,
+            onItemPressed: (i) {
+              setState(() => _selectedIndex = i);
+            },
+            buttons: [
+              ButtonData(Text('Contest'), FaIcon(FontAwesomeIcons.question)),
+              ButtonData(Text('Practice'), FaIcon(FontAwesomeIcons.question)),
+              ButtonData(Text('Share'), FaIcon(FontAwesomeIcons.question)),
+              ButtonData(Text('Help'), FaIcon(FontAwesomeIcons.question))
+            ],
           ),
         ],
       ),

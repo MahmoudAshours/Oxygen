@@ -29,12 +29,11 @@ class _MyAppState extends State<MyApp> {
     return ChangeNotifierProvider.value(
       value: provider,
       child: MaterialApp(
-        title: 'Aschente',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        title: 'Oxygen',
         home: Scaffold(
-          body: Center(child: SplashWidget()),
+          body: Center(
+            child: SplashWidget(),
+          ),
         ),
       ),
     );
