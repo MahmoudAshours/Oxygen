@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  AuthProvider? provider;
+  late AuthProvider provider;
 
   @override
   void initState() {

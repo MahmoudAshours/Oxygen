@@ -1,6 +1,6 @@
 class Strings {
   // main strings
-  static final String appName = 'Aschente';
+  static final String appName = 'Oxygen';
   static final String fontFamily = 'Poppins';
 
   // Welcome|auth strings
